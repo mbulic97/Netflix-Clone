@@ -15,7 +15,7 @@ const Login = () => {
     event.preventDefault();
     setLoading(true);
     if(signState==="Sign In"){
-      await login (email.password);
+      await login (email,password);
     }
     else{
       await signup(name,email,password);
